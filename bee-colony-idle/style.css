@@ -1,0 +1,77 @@
+:root {
+	--bg: #fff6dc;
+	--panel: #fffdf4;
+	--edge: #4a2c12;
+	--ink: #4a2c12;
+	--muted: #8a6a45;
+	--honey: #f6b93b;
+	--link: #b35c00;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--ink);
+	font: 17px/1.6 ui-rounded, "SF Pro Rounded", "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+main {
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 32px 16px 64px;
+}
+header {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	margin-bottom: 28px;
+}
+header img {
+	width: 88px;
+	height: 88px;
+	border-radius: 20px;
+	border: 2px solid var(--edge);
+	flex: none;
+}
+header p { margin: 4px 0 0; color: var(--muted); }
+h1 {
+	margin: 0;
+	font-size: 30px;
+	line-height: 1.2;
+}
+h2 {
+	margin: 36px 0 8px;
+	font-size: 22px;
+	border-bottom: 3px solid var(--honey);
+	padding-bottom: 4px;
+}
+h3 {
+	margin: 22px 0 4px;
+	font-size: 17px;
+}
+p, ul { margin: 8px 0; }
+ul { padding-left: 22px; }
+a { color: var(--link); }
+.box {
+	background: var(--panel);
+	border: 2px solid var(--edge);
+	border-radius: 16px;
+	padding: 16px 18px;
+}
+.mail {
+	font-size: 20px;
+	font-weight: 700;
+	overflow-wrap: anywhere;
+}
+.lang {
+	margin-top: 56px;
+	padding-top: 8px;
+	border-top: 2px dashed var(--edge);
+}
+footer {
+	margin-top: 48px;
+	padding-top: 16px;
+	border-top: 2px solid var(--edge);
+	color: var(--muted);
+	font-size: 15px;
+}
